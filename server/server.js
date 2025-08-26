@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/api/status",(req,res)=>res.send("Server is live"));
 app.use("/api/auth",userRouter);
 
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT || 5000; 
 // connect db
 connectDb().then(
 server.listen(PORT,()=> console.log(`Server is running at port ${PORT}`))
