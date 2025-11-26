@@ -37,7 +37,7 @@ export const AuthProvider= ({children})=>{
 
     const login= async(state, credentials)=>{
         try{
-            console.log(data);
+            // console.log(data);
             const {data}= await axios.post(`/api/auth/${state}`,credentials);
             
             if(data.success){
